@@ -1,7 +1,7 @@
 {
-    "name": "text-extractor",
-    "description": "Extract text from binary documents.",
+    "name": "all-text-extractor",
+    "description": "Extract text from all types of documents.",
     "runtime": "python",
     "profile": "default",
-    "role": "arn:aws:iam::394252546268:role/lambda_basic_execution"
+    "role": "arn:aws:iam::748039698304:role/lambda_full_access_santiago"
 }

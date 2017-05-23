@@ -1,0 +1,25 @@
+{
+  "doc_uri": "s3://doc-classifier/TESTS/original_docs_1/empsit.pdf",
+  "text_uri": "s3://doc-classifier/TESTS/text_extracted_2/empsit.txt",
+}
+
+{
+  "doc_uri": "s3://doc-classifier/TESTS/original_docs_1/0.rtf",
+  "text_uri": "s3://doc-classifier/TESTS/text_extracted_2/0.txt",
+}
+
+{
+  "doc_uri": "s3://doc-classifier/TESTS/original_docs_1/1.doc",
+  "text_uri": "s3://doc-classifier/TESTS/text_extracted_2/1.txt",
+  "text_encoding": "utf-8"
+}
+
+TESTS/original_docs_1/0.rtf
+
+
+  "reason": "Exception while executing ['/var/task/bin/unrtf', '-P', '/var/task/lib/unrtf', '--text', u'/tmp/intelllex_dZROnq.rtf']: Command '['/var/task/bin/unrtf', '-P', '/var/task/lib/unrtf', '--text', u'/tmp/intelllex_dZROnq.rtf']' returned non-zero exit status 1 (output=No config directories. Searched: /var/task/lib/unrtf\n)",
+
+  {
+    "reason": "Exception while executing ['/var/task/bin/antiword', '-t', '-w', '0', '-m', 'UTF-8', u'/tmp/intelllex_pLX1jK.doc']: Command '['/var/task/bin/antiword', '-t', '-w', '0', '-m', 'UTF-8', u'/tmp/intelllex_pLX1jK.doc']' returned non-zero exit status 1 (output=I can't find the name of your HOME directory\nI can't open your mapping file (UTF-8.txt)\nIt is not in '/.antiword' nor in '/usr/share/antiword'.\n\tName: antiword\n\tPurpose: Display MS-Word files\n\tAuthor: (C) 1998-2005 Adri van Os\n\tVersion: 0.37  (21 Oct 2005)\n\tStatus: GNU General Public License\n\tUsage: antiword [switches] wordfile1 [wordfile2 ...]\n\tSwitches: [-f|-t|-a papersize|-p papersize|-x dtd][-m mapping][-w #][-i #][-Ls]\n\t\t-f formatted text output\n\t\t-t text output (default)\n\t\t-a <paper size name> Adobe PDF output\n\t\t-p <paper size name> PostScript output\n\t\t   paper size like: a4, letter or legal\n\t\t-x <dtd> XML output\n\t\t   like: db (DocBook)\n\t\t-m <mapping> character mapping file\n\t\t-w <width> in characters of text output\n\t\t-i <level> image level (PostScript only)\n\t\t-L use landscape mode (PostScript only)\n\t\t-r Show removed text\n\t\t-s Show hidden (by Word) text\n)",
+    "success": false
+  }
