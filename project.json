@@ -1,4 +1,5 @@
 {
+
     "name": "textractor",
     "description": "Extract text from binary documents.",
     "runtime": "python3.6",
@@ -9,4 +10,3 @@
         "TEXTRACTOR_OCR": "textractor_ocr",
         "TEXTRACTOR_SIMPLE": "textractor_simple"
     }
-
