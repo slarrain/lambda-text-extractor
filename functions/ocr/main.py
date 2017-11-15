@@ -32,7 +32,7 @@ TEXTRACT_OUTPUT_WAIT_BUFFER_TIME = float(os.environ.get('TEXTRACT_OUTPUT_WAIT_BU
 
 lambda_client = boto3.client('lambda')
 
-logging.basicConfig(format='%(asctime)-15s [%(name)s-%(process)d] %(levelname)s: %(message)s', level=logging.INFO)
+logging.basicConfig(format='%(asctime)-15s [%(name)s-%(process)d] %(levelname)s: %(message)s', level=logging.DEBUG)
 logger = logging.getLogger(__name__)
 
 
@@ -43,7 +43,7 @@ def handle(event, context):
     temp_uri_prefix = event.get('temp_uri_prefix', event['document_uri'] + '-temp')
     text_uri = event.get('text_uri', document_uri + '.txt')
     searchable_pdf_uri = event.get('searchable_pdf_uri', document_uri + '.searchable.pdf')
-    create_searchable_pdf = event.get('create_searchable_pdf', True)
+    create_searchable_pdf = event.get('create_searchable_pdf', False)
     page = event.get('page')
 
     event['temp_uri_prefix'] = temp_uri_prefix
